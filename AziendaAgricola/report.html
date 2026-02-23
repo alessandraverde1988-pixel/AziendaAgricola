@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TerraNostra.Bio - Report</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <script src="assets/script.js"></script>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="registro.html">Nuovo Intervento</a></li>
+            <li><a href="report.html">Report & Storico</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Situazione Aziendale</h1>
+        <div class="date-display" id="dataOdierna"></div>
+
+        <!-- Sezione 1: Stato Attuale Lotti -->
+        <h2>Stato Lotti e Costi Cumulativi</h2>
+        <table id="tabellaStatoLotti">
+            <thead>
+                <tr>
+                    <th>Nome Lotto</th>
+                    <th>Area</th>
+                    <th>Coltura Attuale</th>
+                    <th>Costo Totale Interventi (€)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Popolato da JS -->
+            </tbody>
+        </table>
+
+        <!-- Sezione 2: Storico Interventi -->
+        <h2 style="margin-top: 40px;">Storico Attività</h2>
+        
+        <div class="filter-section">
+            <input type="text" id="cercaLotto" placeholder="Cerca per nome lotto o data (AAAA-MM-GG)..." style="max-width: 300px;">
+        </div>
+
+        <table id="tabellaStorico">
+            <thead>
+                <tr>
+                    <th>Lotto</th>
+                    <th>Coltura</th>
+                    <th>Tipo Intervento</th>
+                    <th>Data/Ora</th>
+                    <th>Quantità</th>
+                    <th>U.M.</th>
+                    <th>Costo Op.</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Popolato da JS -->
+            </tbody>
+        </table>
+
+    </main>
+
+<footer>
+        <div class="footer-content">
+            <p>&copy; 2025 TerraNostra.Bio S.r.l. - Tutti i diritti riservati.</p>
+            <p>Sede Legale: Via Giampaolo Torti 44, 83014 Ospedaletto D'alpinolo (AV) | P.IVA: IT12345678901</p>
+            <p>
+                <a href="#">Privacy Policy</a> | 
+                <a href="#">Termini di Utilizzo</a> | 
+                <a href="#">Contattaci</a>
+            </p>
+        </div>
+</footer>
+</body>
+</html>
